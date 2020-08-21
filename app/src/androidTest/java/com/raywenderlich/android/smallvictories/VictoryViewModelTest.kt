@@ -83,7 +83,7 @@ class VictoryViewModelTest {
     fun incrementVictoryCountUpdatesCount() {
         var previousCount = 5
         stubVictoryRepositoryGetVictoryCount(previousCount)
-        viewModel.incrementVictoryCount()
+        viewModel.incrementVictoryCount
         verify(mockVictoryRepository).setVictoryCount(previousCount + 1)
     }
 
